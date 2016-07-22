@@ -1,5 +1,5 @@
 #set( $D = '$' )
-
+#set( $H = '#' )
 package ${package};
 
 import org.slf4j.Logger;
@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class ComponentConfiguration {
     private static final Logger LOG = LoggerFactory.getLogger(ComponentConfiguration.class);
 
-    @Value("${D}{ot.component.config:${D}{null}}")
+    @Value("${D}{ot.component.config:${H}{null}}")
     private String configurable;
 
     @Bean
