@@ -15,13 +15,37 @@
     <tag>HEAD</tag>
   </scm>
 
-  <groupId>com.opentable</groupId>
   <artifactId>otj-spring-archetypes</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+
+  <properties>
+    <basepom.check.skip-checkstyle>true</basepom.check.skip-checkstyle>
+    <dep.archetype.version>2.4</dep.archetype.version>
+  </properties>
 
   <modules>
     <module>component</module>
     <module>service</module>
   </modules>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>${dep.archetype.version}</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>${dep.archetype.version}</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
