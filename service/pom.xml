@@ -9,4 +9,13 @@
   </parent>
 
   <artifactId>spring-archetype-service</artifactId>
+  <packaging>maven-archetype</packaging>
+  <description>OpenTable Spring Service archetype</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+  </dependencies>
 </project>
