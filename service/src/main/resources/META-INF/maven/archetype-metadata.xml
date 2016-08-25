@@ -1,1 +1,24 @@
-../../../../../../component/src/main/resources/META-INF/maven/archetype-metadata.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  NB: This file is mostly duplicated between the service and component.
+  Make sure to update accordingly.
+-->
+<archetype-descriptor name="component">
+  <requiredProperties>
+    <requiredProperty key="otj-parent-version" />
+  </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true" packaged="true">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" packaged="true">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>

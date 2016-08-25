@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+  NB: This file is mostly duplicated between the service and component.
+  Make sure to update accordingly.
+-->
 <archetype-descriptor name="component">
   <requiredProperties>
     <requiredProperty key="otj-parent-version" />
