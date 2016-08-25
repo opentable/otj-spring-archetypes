@@ -20,5 +20,11 @@
         <include>**/*.java</include>
       </includes>
     </fileSet>
+    <fileSet>
+      <directory></directory>
+      <includes>
+        <include>.build-service</include>
+      </includes>
+    </fileSet>
   </fileSets>
 </archetype-descriptor>
