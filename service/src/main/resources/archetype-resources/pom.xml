@@ -23,7 +23,7 @@
   <description>Automatically generated description, fill me in!</description>
 
   <properties>
-    <ot.mainclass>${groupid}.Main</ot.mainclass>
+    <ot.mainclass>${groupId}.Main</ot.mainclass>
   </properties>
 
   <dependencies>
