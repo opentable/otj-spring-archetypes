@@ -12,11 +12,11 @@
     <connection>scm:git:git://github.com/opentable/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:opentable/${project.artifactId}.git</developerConnection>
     <url>http://github.com/opentable/${project.artifactId}</url>
-    <tag>HEAD</tag>
+    <tag>otj-spring-archetypes-0.0.3</tag>
   </scm>
 
   <artifactId>otj-spring-archetypes</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3</version>
   <packaging>pom</packaging>
 
   <properties>
