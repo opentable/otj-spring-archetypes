@@ -18,7 +18,6 @@
 
   <groupId>${groupId}</groupId>
   <artifactId>${artifactId}</artifactId>
-  <name>${artifactId}</name>
   <version>1.0.0-SNAPSHOT</version>
   <description>Automatically generated description, fill me in!</description>
 
