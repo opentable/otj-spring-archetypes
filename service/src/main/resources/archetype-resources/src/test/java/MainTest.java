@@ -1,6 +1,7 @@
 package ${package};
 
 import static org.junit.Assert.assertEquals;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.inject.Inject;
 import javax.ws.rs.core.Response;
@@ -27,8 +28,8 @@ public class MainTest {
         final Client httpClient = ClientBuilder.newClient();
         try {
             Response r = httpClient.target(String.format("http://localhost:%s/my/resource", port)).request().get();
-            assertEquals(200, r.getStatus());
-            assertEquals("Hello, World!", r.readEntity(String.class));
+            assertThat(r.getStatus()).isEqualTo(200);
+            assertThat(r.readEntity(String.class)).isEqualTo("Hello, World!");
         } finally {
             httpClient.close();
         }

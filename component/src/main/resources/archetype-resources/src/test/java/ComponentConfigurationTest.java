@@ -1,5 +1,6 @@
 package ${package};
-import static org.junit.Assert.assertEquals;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 import javax.inject.Inject;
 
@@ -22,6 +23,6 @@ public class ComponentConfigurationTest {
 
     @Test
     public void testComponent() {
-        assertEquals("foo", component.getConfigurable());
+        assertThat(component.getConfigurable()).isEqualTo("foo");
     }
 }
