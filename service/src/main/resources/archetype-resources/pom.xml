@@ -22,7 +22,7 @@
   <description>Automatically generated description, fill me in!</description>
 
   <properties>
-    <ot.mainclass>${groupId}.Main</ot.mainclass>
+    <ot.mainclass>${package}.Main</ot.mainclass>
   </properties>
 
   <dependencies>
