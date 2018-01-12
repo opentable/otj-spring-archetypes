@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.opentable</groupId>
     <artifactId>otj-parent-spring</artifactId>
-    <version>80</version>
+    <version>133</version>
   </parent>
 
   <scm>
@@ -28,6 +28,35 @@
     <module>component</module>
     <module>service</module>
   </modules>
+
+  <!--
+    TeamCity configures the Maven configuration in a funny location that changes on every invocation.  When it invokes
+    Maven, it passes in that location, however, in a system property.  This configuration block ensures that the
+    archetype plugin has the settings file set to this value when it itself invokes Maven in testing our archetypes.
+  -->
+  <profiles>
+    <profile>
+      <id>teamcity</id>
+      <activation>
+        <property>
+          <name>teamcity.maven.userSettings.path</name>
+        </property>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-archetype-plugin</artifactId>
+              <configuration>
+                <settingsFile>${teamcity.maven.userSettings.path}</settingsFile>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
 
   <build>
     <extensions>
