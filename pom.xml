@@ -29,6 +29,11 @@
     <module>service</module>
   </modules>
 
+  <!--
+    TeamCity configures the Maven configuration in a funny location that changes on every invocation.  When it invokes
+    Maven, it passes in that location, however, in a system property.  This configuration block ensures that the
+    archetype plugin has the settings file set to this value when it itself invokes Maven in testing our archetypes.
+  -->
   <profiles>
     <profile>
       <id>teamcity</id>
