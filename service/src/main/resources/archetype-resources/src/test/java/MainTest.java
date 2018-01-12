@@ -9,24 +9,25 @@ import javax.ws.rs.client.ClientBuilder;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.boot.context.embedded.LocalServerPort;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
+
+import com.opentable.server.HttpServerInfo;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes=Main.class, webEnvironment=WebEnvironment.RANDOM_PORT)
 public class MainTest {
 
     @Inject
-    @LocalServerPort
-    int port;
+    private HttpServerInfo serverInfo;
 
     @Test
     public void testHelloWorld() throws Exception {
         final Client httpClient = ClientBuilder.newClient();
+        final String target = String.format("http://localhost:%s/my/resource", serverInfo.getPort());
         try {
-            Response r = httpClient.target(String.format("http://localhost:%s/my/resource", port)).request().get();
+            final Response r = httpClient.target(target).request().get();
             assertThat(r.getStatus()).isEqualTo(200);
             assertThat(r.readEntity(String.class)).isEqualTo("Hello, World!");
         } finally {
