@@ -29,6 +29,30 @@
     <module>service</module>
   </modules>
 
+  <profiles>
+    <profile>
+      <id>teamcity</id>
+      <activation>
+        <property>
+          <name>teamcity.maven.userSettings.path</name>
+        </property>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-archetype-plugin</artifactId>
+              <configuration>
+                <settingsFile>${teamcity.maven.userSettings.path}</settingsFile>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+
   <build>
     <extensions>
       <extension>
