@@ -18,7 +18,7 @@
   <parent>
     <groupId>com.opentable</groupId>
     <artifactId>otj-spring-archetypes</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.7</version>
   </parent>
 
   <artifactId>spring-archetype-service</artifactId>
