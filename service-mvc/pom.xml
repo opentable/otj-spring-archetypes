@@ -21,15 +21,11 @@
     <version>0.0.8-SNAPSHOT</version>
   </parent>
 
-  <artifactId>spring-archetype-service</artifactId>
+  <artifactId>spring-archetype-service-mvc</artifactId>
   <packaging>maven-archetype</packaging>
-  <description>OpenTable Spring JAX-RS Service archetype</description>
+  <description>OpenTable Spring MVC Service archetype</description>
 
   <dependencies>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
     <dependency>
       <groupId>javax.inject</groupId>
       <artifactId>javax.inject</artifactId>

@@ -12,7 +12,13 @@
        <groupId>com.opentable</groupId>
        <artifactId>spring-archetype-service</artifactId>
        <version>RELEASE</version>
-       <description>OpenTable Spring service</description>
+       <description>OpenTable Spring JAX-RS Service archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>com.opentable</groupId>
+      <artifactId>spring-archetype-service-mvc</artifactId>
+      <version>RELEASE</version>
+      <description>OpenTable Spring MVC Service archetype</description>
     </archetype>
   </archetypes>
 </archetype-catalog>

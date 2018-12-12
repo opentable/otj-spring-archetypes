@@ -14,16 +14,20 @@ package ${package};
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.web.client.RestTemplate;
 
 import com.opentable.server.OTApplication;
-import com.opentable.server.JAXRSServer;
+import com.opentable.server.mvc.MVCServer;
 import com.opentable.service.ServiceInfo;
 import com.opentable.service.discovery.client.EnableDiscoveryClient;
 
+import com.opentable.resttemplate.RestTemplateConfiguration;
+import com.opentable.resttemplate.RestTemplateFactory;
+
 @Configuration
-@JAXRSServer
+@MVCServer
 @EnableDiscoveryClient
-@Import(MyResource.class)
+@Import({RestTemplateConfiguration.class, MyController.class})
 public class Main {
     public static void main(final String[] args) {
         OTApplication.run(Main.class, args);
@@ -37,5 +41,10 @@ public class Main {
                 return "${artifactId}";
             }
         };
+    }
+
+    @Bean
+    public RestTemplate curlClient(RestTemplateFactory restTemplateFactory) {
+        return restTemplateFactory.newTemplate();
     }
 }
