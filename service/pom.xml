@@ -23,7 +23,7 @@
 
   <artifactId>spring-archetype-service</artifactId>
   <packaging>maven-archetype</packaging>
-  <description>OpenTable Spring Service archetype</description>
+  <description>OpenTable Spring JAX-RS Service archetype</description>
 
   <dependencies>
     <dependency>

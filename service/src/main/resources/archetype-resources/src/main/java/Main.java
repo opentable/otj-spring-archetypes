@@ -16,12 +16,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 import com.opentable.server.OTApplication;
-import com.opentable.server.RestHttpServer;
+import com.opentable.server.JAXRSServer;
 import com.opentable.service.ServiceInfo;
 import com.opentable.service.discovery.client.EnableDiscoveryClient;
 
 @Configuration
-@RestHttpServer
+@JAXRSServer
 @EnableDiscoveryClient
 @Import(MyResource.class)
 public class Main {
