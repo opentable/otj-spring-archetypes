@@ -40,6 +40,7 @@
   <modules>
     <module>component</module>
     <module>service</module>
+    <module>service-mvc</module>
   </modules>
 
   <!--
