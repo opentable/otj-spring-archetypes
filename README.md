@@ -12,5 +12,5 @@ based projects.
 
 We include archetypes for generating `component`s, and `service`s.
 
-[1]: https://wiki.otcorp.opentable.com/x/t4q8AQ
+[1]: https://wiki.runthedish.com/x/t4q8AQ
 [2]: http://maven.apache.org/archetype/maven-archetype-plugin/
