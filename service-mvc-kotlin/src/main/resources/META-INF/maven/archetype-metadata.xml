@@ -16,37 +16,44 @@
   NB: This file is mostly duplicated between the service and component.
   Make sure to update accordingly.
 -->
-<archetype-descriptor name="component-kotlin">
+<archetype-descriptor name="service-mvc-kotlin">
   <requiredProperties>
-    <requiredProperty key="otj-parent-version"/>
+    <requiredProperty key="otj-parent-version" />
   </requiredProperties>
   <fileSets>
-    <fileSet filtered="true" packaged="true">
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
       <directory>src/main/java</directory>
       <includes>
         <include>**/*.java</include>
         <include>**/*.kt</include>
       </includes>
     </fileSet>
-    <fileSet filtered="true" packaged="true">
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
       <directory>src/main/kotlin</directory>
       <includes>
         <include>**/*.java</include>
         <include>**/*.kt</include>
       </includes>
     </fileSet>
-    <fileSet filtered="true" packaged="true">
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
       <directory>src/test/java</directory>
       <includes>
         <include>**/*.java</include>
         <include>**/*.kt</include>
       </includes>
     </fileSet>
-    <fileSet filtered="true" packaged="true">
+    <fileSet encoding="UTF-8" filtered="true" packaged="true">
       <directory>src/test/kotlin</directory>
       <includes>
         <include>**/*.java</include>
         <include>**/*.kt</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory/>
+      <includes>
+        <include>.build-service</include>
+        <include>.gitignore</include>
       </includes>
     </fileSet>
   </fileSets>

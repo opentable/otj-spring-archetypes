@@ -42,6 +42,7 @@
     <module>component-kotlin</module>
     <module>service</module>
     <module>service-mvc</module>
+    <module>service-mvc-kotlin</module>
   </modules>
 
   <!--
