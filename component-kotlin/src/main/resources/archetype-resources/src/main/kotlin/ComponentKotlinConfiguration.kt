@@ -20,7 +20,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * A Spring Configuration class for our ComponentJava.
+ * A Spring Configuration class for our ComponentKotlin.
  * Inject configuration values, set up your beans, etc.
  */
 @Configuration

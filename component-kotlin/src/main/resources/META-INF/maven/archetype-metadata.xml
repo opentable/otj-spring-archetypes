@@ -49,5 +49,11 @@
         <include>**/*.kt</include>
       </includes>
     </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory/>
+      <includes>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
   </fileSets>
 </archetype-descriptor>
