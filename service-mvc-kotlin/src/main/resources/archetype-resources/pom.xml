@@ -34,7 +34,6 @@
 
   <properties>
     <ot.mainclass>${package}.Main</ot.mainclass>
-    <project.build.targetJdk>11</project.build.targetJdk>
     <dep.kotlin.version>1.4.10</dep.kotlin.version>
     <kotlin.code.style>official</kotlin.code.style>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>

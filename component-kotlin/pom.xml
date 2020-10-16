@@ -25,10 +25,6 @@
   <packaging>maven-archetype</packaging>
   <description>OpenTable Spring Component archetype for Kotlin</description>
 
-  <properties>
-    <project.build.targetJdk>11</project.build.targetJdk>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>org.springframework</groupId>
