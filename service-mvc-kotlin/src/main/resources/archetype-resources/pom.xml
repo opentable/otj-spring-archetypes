@@ -33,7 +33,7 @@
   <description>Automatically generated description, fill me in!</description>
 
   <properties>
-    <ot.mainclass>${package}.Main</ot.mainclass>
+    <ot.mainclass>${package}.MainKt</ot.mainclass>
     <dep.kotlin.version>1.4.10</dep.kotlin.version>
     <kotlin.code.style>official</kotlin.code.style>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
