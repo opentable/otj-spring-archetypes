@@ -34,7 +34,7 @@
 
   <properties>
     <ot.mainclass>${package}.MainKt</ot.mainclass>
-    <dep.kotlin.version>1.4.10</dep.kotlin.version>
+    <dep.kotlin.version>1.5.31</dep.kotlin.version>
     <kotlin.code.style>official</kotlin.code.style>
     <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
     <dep.jetbrains.annotations.version>13.0</dep.jetbrains.annotations.version>
@@ -178,16 +178,6 @@
         <groupId>org.jetbrains.kotlin</groupId>
         <artifactId>kotlin-test-junit5</artifactId>
         <version>${dep.kotlin.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-engine</artifactId>
-        <version>${dep.junit-platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.junit.platform</groupId>
-        <artifactId>junit-platform-commons</artifactId>
-        <version>${dep.junit-platform.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
