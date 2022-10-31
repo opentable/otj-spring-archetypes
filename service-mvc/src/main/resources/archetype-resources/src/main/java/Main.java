@@ -23,6 +23,7 @@ import com.opentable.service.discovery.client.EnableDiscoveryClient;
 
 import com.opentable.resttemplate.RestTemplateConfiguration;
 import com.opentable.resttemplate.RestTemplateFactory;
+import com.opentable.resttemplate.RestTemplateFeatureBinding;
 
 @Configuration
 @MVCServer
@@ -45,6 +46,6 @@ public class Main {
 
     @Bean
     public RestTemplate curlClient(RestTemplateFactory restTemplateFactory) {
-        return restTemplateFactory.newTemplate();
+        return restTemplateFactory.newTemplate("${artifactId}", RestTemplateFeatureBinding.INTERNAL);
     }
 }

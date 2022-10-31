@@ -24,10 +24,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import  ${package}.Main;
+import  $
+
+import com.opentable.Main;{package}.Main;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=Main.class, webEnvironment=WebEnvironment.RANDOM_PORT)
+@SpringBootTest(classes= Main.class, webEnvironment=WebEnvironment.RANDOM_PORT)
 public class MainTest {
 
     @Inject
