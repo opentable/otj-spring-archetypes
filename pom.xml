@@ -18,7 +18,7 @@
   <parent>
     <groupId>com.opentable</groupId>
     <artifactId>otj-parent-spring</artifactId>
-    <version>180</version>
+    <version>374</version>
   </parent>
 
   <scm>
@@ -34,12 +34,11 @@
 
   <properties>
     <basepom.check.skip-checkstyle>true</basepom.check.skip-checkstyle>
-    <dep.archetype.version>2.4</dep.archetype.version>
+    <dep.archetype.version>3.2.1</dep.archetype.version>
   </properties>
 
   <modules>
     <module>component</module>
-    <module>service</module>
     <module>service-mvc</module>
   </modules>
 
