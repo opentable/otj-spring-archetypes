@@ -35,6 +35,7 @@
   <properties>
     <basepom.check.skip-checkstyle>true</basepom.check.skip-checkstyle>
     <dep.archetype.version>3.2.1</dep.archetype.version>
+    <basepom.check.skip-license>true</basepom.check.skip-license>
   </properties>
 
   <modules>
@@ -86,25 +87,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>${dep.archetype.version}</version>
-        </plugin>
-
-        <plugin>
-          <groupId>com.mycila</groupId>
-          <artifactId>license-maven-plugin</artifactId>
-          <configuration>
-            <excludes combine.self="append">
-              <!-- The format of these files expected by the Maven Archetype plugin does not permit commenting. -->
-              <exclude>**/goal.txt</exclude>
-              <!--
-                We actually have _Velocity_ comments in our POMs and .java files.
-                Maybe it's worth writing a custom mapping?
-              -->
-              <exclude>**/pom.xml</exclude>
-              <exclude>**/*.java</exclude>
-              <!-- N/A. -->
-              <exclude>**/.build-service</exclude>
-            </excludes>
-          </configuration>
         </plugin>
       </plugins>
     </pluginManagement>
