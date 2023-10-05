@@ -41,6 +41,7 @@
   <modules>
     <module>component</module>
     <module>service-mvc</module>
+    <module>service-reactive</module>
   </modules>
 
   <!--
