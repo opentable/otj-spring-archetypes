@@ -34,7 +34,7 @@
 
   <properties>
     <basepom.check.skip-checkstyle>true</basepom.check.skip-checkstyle>
-    <dep.archetype.version>3.2.1</dep.archetype.version>
+    <dep.archetype.version>3.3.0</dep.archetype.version>
     <basepom.check.skip-license>true</basepom.check.skip-license>
   </properties>
 
